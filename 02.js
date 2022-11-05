@@ -12,8 +12,16 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+var numcad = 0;
+var cadena;
+  for ( var i=0; i < strings.length; i++){
+     if (numcad < strings[i].length){
+       cadena = strings[i];
+       numcad = strings[i].length
+     }
+  }
+return cadena;
 }
-
 // No modifiques nada debajo de esta linea //
 
 module.exports = stringMasLarga
