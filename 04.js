@@ -13,7 +13,16 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
-
+  cadeReve = "";
+  let longitud = "" + num;
+for (let i = longitud.length - 1; i>=0; i--){
+  cadeReve = cadeReve + longitud[i];
+} 
+if (cadeReve==longitud){
+  return true;
+}else{
+  return false;
+}
 }
 
 // No modifiques nada debajo de esta linea //
