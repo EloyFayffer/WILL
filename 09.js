@@ -24,7 +24,21 @@ function filtrar(funcion) {
   // productos.filtrar(function(p) {
   //   return p.price >= 50;
   // }) => [{price: 100, name:'tv'}]
+ // var productos = [{  price: 100, name: 'tv' }, { price: 50,  name: 'phone' }, {  price: 30, name: 'lamp' }]
+ var cadena_pr = [];
+ return (funcion) =>{
+    if (funcion >= 50){
+      cadena_pr.push(productos); 
+    }
+ }
 
+  function produc(productos, myCallback){
+    for( var i=0; i < productos[i].length ; i++ ){
+        return myCallback( productos[i].price);
+    }
+
+  }
+  return produc(productos,funcion);
 };
 
 // No modifiques nada debajo de esta linea //
